@@ -53,7 +53,9 @@ class AppRoutes {
 
   static final routerPages = [
     ///主入口
-    GetPage(name: indexPage, page: () => IndexPage(), binding: IndexBinding()),
+    GetPage(name: indexPage,
+        page: () => IndexPage(),
+        binding: IndexBinding()),
 
     /// 发布页面
     GetPage(

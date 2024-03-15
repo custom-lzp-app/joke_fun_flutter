@@ -29,8 +29,8 @@ class CropAvatarPage extends CpnViewState<CropAvatarLogic> {
       cropController: logic.cropController,
       shape: CustomCropShape.Square,
       cropPercentage: 0.75,
-      canRotate: false,
-      imageFit: CustomImageFit.fillVisiblelWidth,
+      canRotate: false,//11,4
+      // imageFit: CustomImageFit.fillVisiblelWidth,
       customProgressIndicator: defaultLoadingWidget(),
       image: FileImage(originImageFile),
     );
