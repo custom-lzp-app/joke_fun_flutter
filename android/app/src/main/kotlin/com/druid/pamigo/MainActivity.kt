@@ -1,4 +1,4 @@
-package com.example.joke_fun_flutter
+package com.druid.pamigo
 
 import io.flutter.embedding.android.FlutterActivity
 

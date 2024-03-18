@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/util/preference_utils.dart';
+import 'package:druid_pamigo_flutter/common/util/preference_utils.dart';
 
 import '../../models/login_entity.dart';
 

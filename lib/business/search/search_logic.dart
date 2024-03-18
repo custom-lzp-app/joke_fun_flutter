@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/search/result/search_result_logic.dart';
-import 'package:joke_fun_flutter/common/util/keyboard_util.dart';
+import 'package:druid_pamigo_flutter/business/search/result/search_result_logic.dart';
+import 'package:druid_pamigo_flutter/common/util/keyboard_util.dart';
 
 class SearchLogic extends GetxController {
   TextEditingController textEditingController = TextEditingController();

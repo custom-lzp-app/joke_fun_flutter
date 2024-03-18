@@ -2,14 +2,14 @@ import 'dart:io';
 
 import 'package:custom_image_crop/custom_image_crop.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/ext/get_ext.dart';
-import 'package:joke_fun_flutter/common/util/string_util.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/common/ext/get_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/string_util.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
 import 'package:path_provider/path_provider.dart';
 
-// import 'package:joke_fun_flutter/common/util/log_util.dart';
-// import 'package:joke_fun_flutter/http/retrofit_client.dart';
+// import 'package:druid_pamigo_flutter/common/util/log_util.dart';
+// import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
 // import 'package:qiniu_flutter_sdk/qiniu_flutter_sdk.dart';
 
 class CropAvatarLogic extends ViewStateLogic {

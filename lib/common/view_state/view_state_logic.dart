@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/ext/get_ext.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state.dart';
-import 'package:joke_fun_flutter/http/exception/request_exception.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/common/ext/get_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state.dart';
+import 'package:druid_pamigo_flutter/http/exception/request_exception.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
 
 import '../../models/base_result.dart';
 import '../util/log_util.dart';

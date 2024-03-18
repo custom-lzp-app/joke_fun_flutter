@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
 import 'package:get/get_utils/get_utils.dart';
-import 'package:joke_fun_flutter/business/common/event/attention_changed_event.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/models/recommend_attention_entity.dart';
+import 'package:druid_pamigo_flutter/business/common/event/attention_changed_event.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/models/recommend_attention_entity.dart';
 
 class RecommendUserLogic extends ViewStateLogic {
   RxList<RecommendAttentionEntity> dataList = <RecommendAttentionEntity>[].obs;

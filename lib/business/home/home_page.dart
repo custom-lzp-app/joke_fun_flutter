@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
 
 import '../../common/cpn/app_bar.dart';
 import '../../theme/color_palettes.dart';
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
       labelPadding: const EdgeInsets.all(0),
       labelColor: ColorPalettes.instance.primary,
       unselectedLabelColor: ColorPalettes.instance.secondText,
-      labelStyle: TextStyle(fontSize: 36.w, fontWeight: FontWeight.bold),
+      labelStyle: TextStyle(fontSize: 33.w, fontWeight: FontWeight.bold),
       unselectedLabelStyle:
           TextStyle(fontSize: 32.w, fontWeight: FontWeight.normal),
       //未选中时标签的颜色

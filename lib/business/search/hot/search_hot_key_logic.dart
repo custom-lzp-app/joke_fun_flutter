@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
 
 class SearchHotKeyLogic extends ViewStateLogic {
 

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart'
     hide RefreshIndicator, RefreshIndicatorState;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:lottie/lottie.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 

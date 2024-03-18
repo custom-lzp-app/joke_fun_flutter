@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
 
 class AppRouterObserver extends GetObserver {
   @override

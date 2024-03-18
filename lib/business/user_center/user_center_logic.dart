@@ -2,16 +2,16 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/event/attention_changed_event.dart';
-import 'package:joke_fun_flutter/business/user_center/collect/user_collect_page.dart';
-import 'package:joke_fun_flutter/business/user_center/comment/user_comment_page.dart';
-import 'package:joke_fun_flutter/business/user_center/creation/user_creation_page.dart';
-import 'package:joke_fun_flutter/business/user_center/like/user_like_page.dart';
-import 'package:joke_fun_flutter/common/cpn/keep_alive_wrapper.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/models/user_center_entity.dart';
+import 'package:druid_pamigo_flutter/business/common/event/attention_changed_event.dart';
+import 'package:druid_pamigo_flutter/business/user_center/collect/user_collect_page.dart';
+import 'package:druid_pamigo_flutter/business/user_center/comment/user_comment_page.dart';
+import 'package:druid_pamigo_flutter/business/user_center/creation/user_creation_page.dart';
+import 'package:druid_pamigo_flutter/business/user_center/like/user_like_page.dart';
+import 'package:druid_pamigo_flutter/common/cpn/keep_alive_wrapper.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/models/user_center_entity.dart';
 
 import '../../common/util/user_manager.dart';
 

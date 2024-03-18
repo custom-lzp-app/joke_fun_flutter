@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/setting/sheet/theme_setting_sheet.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/setting/sheet/theme_setting_sheet.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'setting_logic.dart';
 

@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
 
 Widget cpnImage({
   String? url,

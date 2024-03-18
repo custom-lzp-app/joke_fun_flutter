@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 通用AppBar
 AppBar commonAppBar(
@@ -102,9 +102,9 @@ PreferredSizeWidget? commonTitleBar({
 
 void updateStatusBarColor(Color color, bool iconDark) {
   var isDarkStyle = ColorPalettes.instance.isDark();
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: color,
-      statusBarIconBrightness: (iconDark == true && !isDarkStyle)
-          ? Brightness.dark
-          : Brightness.light));
+  // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+  //     statusBarColor: color,
+  //     statusBarIconBrightness: (iconDark == true && !isDarkStyle)
+  //         ? Brightness.dark
+  //         : Brightness.light));
 }

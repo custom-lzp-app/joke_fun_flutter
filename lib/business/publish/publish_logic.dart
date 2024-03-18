@@ -3,12 +3,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/util/keyboard_util.dart';
-import 'package:joke_fun_flutter/common/util/preference_utils.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/util/keyboard_util.dart';
+import 'package:druid_pamigo_flutter/common/util/preference_utils.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 class PublishLogic extends ViewStateLogic {

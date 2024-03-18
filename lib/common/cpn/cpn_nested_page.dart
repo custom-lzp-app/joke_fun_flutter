@@ -1,8 +1,8 @@
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/cpn/no_over_scroll_behavior.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/cpn/no_over_scroll_behavior.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 协调滚动布局页面基础组件
 abstract class CpnNestedPage<T extends GetxController> extends StatelessWidget {

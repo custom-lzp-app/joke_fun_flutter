@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:joke_fun_flutter/business/setting/setting_logic.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/ext/get_ext.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/setting/setting_logic.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/ext/get_ext.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// app主题色设置底部弹框
 void showThemeSettingBottomSheet() {

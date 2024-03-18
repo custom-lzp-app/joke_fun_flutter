@@ -2,18 +2,18 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/event/attention_changed_event.dart';
-import 'package:joke_fun_flutter/business/common/event/joke_comment_num_event.dart';
-import 'package:joke_fun_flutter/business/common/event/joke_like_action_event.dart';
-import 'package:joke_fun_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
-import 'package:joke_fun_flutter/business/joke_detail/comment/joke_detail_comment_page.dart';
-import 'package:joke_fun_flutter/business/joke_detail/like/joke_detail_like_page.dart';
-import 'package:joke_fun_flutter/common/cpn/keep_alive_wrapper.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/business/common/event/attention_changed_event.dart';
+import 'package:druid_pamigo_flutter/business/common/event/joke_comment_num_event.dart';
+import 'package:druid_pamigo_flutter/business/common/event/joke_like_action_event.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
+import 'package:druid_pamigo_flutter/business/joke_detail/comment/joke_detail_comment_page.dart';
+import 'package:druid_pamigo_flutter/business/joke_detail/like/joke_detail_like_page.dart';
+import 'package:druid_pamigo_flutter/common/cpn/keep_alive_wrapper.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
 
 class JokeDetailLogic extends ViewStateLogic
     with GetSingleTickerProviderStateMixin {

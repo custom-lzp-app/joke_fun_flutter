@@ -3,11 +3,11 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:joke_fun_flutter/common/ext/get_ext.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/ext/get_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 class EditCenterLogic extends ViewStateLogic {

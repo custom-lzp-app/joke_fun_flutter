@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:custom_image_crop/custom_image_crop.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_default_view_state.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_default_view_state.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state.dart';
 
 import 'crop_avatar_logic.dart';
 

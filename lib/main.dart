@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
-import 'package:joke_fun_flutter/business/index/index_binding.dart';
-import 'package:joke_fun_flutter/business/index/index_page.dart';
-import 'package:joke_fun_flutter/router/router_observer.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/business/index/index_binding.dart';
+import 'package:druid_pamigo_flutter/business/index/index_page.dart';
+import 'package:druid_pamigo_flutter/router/router_observer.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import 'common/cpn/default_refresh_indicator.dart';

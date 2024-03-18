@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/search/search_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/search/search_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'search_hot_key_logic.dart';
 

@@ -4,11 +4,11 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/util/media_util.dart';
-import 'package:joke_fun_flutter/common/util/string_util.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/common/util/string_util.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
 import 'package:path_provider/path_provider.dart';
 
 class PicPreviewLogic extends ViewStateLogic {

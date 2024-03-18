@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_image.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/util/media_util.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
-import 'package:joke_fun_flutter/models/user_info_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_image.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/models/user_info_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'my_logic.dart';
 

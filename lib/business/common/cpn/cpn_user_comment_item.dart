@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/models/comment_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/models/comment_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 用户评论列表item组件
 class CpnUserCommentItem extends StatelessWidget {

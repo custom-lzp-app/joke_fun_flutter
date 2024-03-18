@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:joke_fun_flutter/generated/json/base/json_field.dart';
-import 'package:joke_fun_flutter/generated/json/fans_entity.g.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_field.dart';
+import 'package:druid_pamigo_flutter/generated/json/fans_entity.g.dart';
 
 @JsonSerializable()
 class FansEntity {

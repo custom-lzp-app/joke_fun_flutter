@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/cpn/cpn_joke_item.dart';
-import 'package:joke_fun_flutter/business/common/logic/joke_comment_list_logic.dart';
-import 'package:joke_fun_flutter/business/common/sheet/joke_comment_sheet.dart';
-import 'package:joke_fun_flutter/business/joke_detail/joke_detail_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_nested_page.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/common/cpn/cpn_joke_item.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_comment_list_logic.dart';
+import 'package:druid_pamigo_flutter/business/common/sheet/joke_comment_sheet.dart';
+import 'package:druid_pamigo_flutter/business/joke_detail/joke_detail_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_nested_page.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 段子详情页
 class JokeDetailPage extends CpnNestedPage<JokeDetailLogic> {

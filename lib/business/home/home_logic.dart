@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/event/home_tab_index_changed_event.dart';
-import 'package:joke_fun_flutter/business/home/follow/follow_page.dart';
-import 'package:joke_fun_flutter/business/home/fresh/fresh_page.dart';
-import 'package:joke_fun_flutter/business/home/fun_pic/fun_pic_page.dart';
-import 'package:joke_fun_flutter/common/cpn/keep_alive_wrapper.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/business/common/event/home_tab_index_changed_event.dart';
+import 'package:druid_pamigo_flutter/business/home/follow/follow_page.dart';
+import 'package:druid_pamigo_flutter/business/home/fresh/fresh_page.dart';
+import 'package:druid_pamigo_flutter/business/home/fun_pic/fun_pic_page.dart';
+import 'package:druid_pamigo_flutter/common/cpn/keep_alive_wrapper.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
 
 import 'pure_text/pure_text_page.dart';
 import 'recommend/recommend_page.dart';

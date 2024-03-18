@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:joke_fun_flutter/common/util/media_util.dart';
-import 'package:joke_fun_flutter/generated/json/base/json_field.dart';
-import 'package:joke_fun_flutter/generated/json/joke_detail_entity.g.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_field.dart';
+import 'package:druid_pamigo_flutter/generated/json/joke_detail_entity.g.dart';
 import 'dart:convert';
 
 @JsonSerializable()

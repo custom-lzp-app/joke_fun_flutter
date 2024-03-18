@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/event/attention_changed_event.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/common/view_state/simple_view_state_paging_logic.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/models/base_result.dart';
-import 'package:joke_fun_flutter/models/fans_entity.dart';
+import 'package:druid_pamigo_flutter/business/common/event/attention_changed_event.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/view_state/simple_view_state_paging_logic.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/models/base_result.dart';
+import 'package:druid_pamigo_flutter/models/fans_entity.dart';
 
 
 class FansLogic extends SimpleViewStatePagingLogic {

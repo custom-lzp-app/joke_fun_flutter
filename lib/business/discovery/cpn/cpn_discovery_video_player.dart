@@ -1,9 +1,9 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
-import 'package:joke_fun_flutter/business/discovery/cpn/discovery_video_player_skin.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
+import 'package:druid_pamigo_flutter/business/discovery/cpn/discovery_video_player_skin.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 /// 发现页面视频播放器组件

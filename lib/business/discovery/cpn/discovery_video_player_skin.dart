@@ -5,7 +5,7 @@ import 'package:chewie/src/chewie_player.dart';
 import 'package:chewie/src/notifiers/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:provider/provider.dart';
 import 'package:video_player/video_player.dart';
 

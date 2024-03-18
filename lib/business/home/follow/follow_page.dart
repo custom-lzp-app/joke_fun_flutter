@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/home/follow/cpn/attention_list/attention_list_page.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_nested_page.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/home/follow/cpn/attention_list/attention_list_page.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_nested_page.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'cpn/recommend_user/recommend_user_page.dart';
 

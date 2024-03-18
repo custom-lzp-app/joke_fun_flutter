@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:lottie/lottie.dart';
 
 import 'index_logic.dart';
@@ -13,13 +13,13 @@ class IndexPage extends StatelessWidget {
   IndexPage({Key? key}) : super(key: key);
 
   final List<BottomNavigationBarItem> bottomNavigationBarItems = [
-    _customBottomNavigationBarItem("nav_home".png, "nav_home".lottie, "主页"),
+    _customBottomNavigationBarItem("navi_home".webp, "navi_home_press".webp, "Home"),
     _customBottomNavigationBarItem(
-        "nav_discovery".png, "nav_discovery".lottie, "发现"),
-    _customBottomNavigationBarItem(null, null, "发布"),
+        "navi_activity".webp, "navi_activity_press".webp, "Activity"),
+    _customBottomNavigationBarItem(null, null, ""),
     _customBottomNavigationBarItem(
-        "nav_message".png, "nav_message".lottie, "消息"),
-    _customBottomNavigationBarItem("nav_my".png, "nav_my".lottie, "我的"),
+        "navi_geofence".webp,  "navi_geofence_press".webp, "Geofence"),
+    _customBottomNavigationBarItem("navi_mine".webp, "navi_mine_press".webp, "Account"),
   ];
 
   static BottomNavigationBarItem _customBottomNavigationBarItem(
@@ -31,19 +31,26 @@ class IndexPage extends StatelessWidget {
                 width: 44.w,
                 height: 44.w,
                 color: ColorPalettes.instance.secondIcon),
-        activeIcon: activeImage == null
+        activeIcon: defaultImage == null
             ? const Icon(null)
-            : Obx(() {
-                return RepaintBoundary(
-                  child: ColorFiltered(
-                      colorFilter: ColorFilter.mode(
-                        ColorPalettes.instance.primary,
-                        BlendMode.srcIn,
-                      ),
-                      child: Lottie.asset(activeImage,
-                          repeat: false, width: 44.w, height: 44.w)),
-                );
-              }),
+            : Image.asset(defaultImage,
+            width: 44.w,
+            height: 44.w,
+            color: ColorPalettes.instance.primary),
+
+        // activeIcon: activeImage == null
+        //     ? const Icon(null)
+        //     : Obx(() {
+        //         return RepaintBoundary(
+        //           child: ColorFiltered(
+        //               colorFilter: ColorFilter.mode(
+        //                 ColorPalettes.instance.primary,
+        //                 BlendMode.srcIn,
+        //               ),
+        //               child: Lottie.asset(activeImage,
+        //                   repeat: false, width: 44.w, height: 44.w)),
+        //         );
+        //       }),
         label: label);
   }
 
@@ -51,21 +58,22 @@ class IndexPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final logic = Get.find<IndexLogic>();
 
-    return Obx(() => Scaffold(
+    return Obx(() =>
+        Scaffold(
           body: PageView(
             controller: logic.pageController,
             physics: const NeverScrollableScrollPhysics(),
             children: logic.navPages,
           ),
-          backgroundColor: const Color(0xFFEEEEEE),
+          backgroundColor: const Color(0xFFFFFFFF),
           floatingActionButtonLocation:
-              FloatingActionButtonLocation.miniCenterDocked,
+          FloatingActionButtonLocation.miniCenterDocked,
           //要实现中间的按钮凸起效果，这行起作用
           bottomNavigationBar: BottomNavigationBar(
             elevation: 8.0,
-            backgroundColor: (logic.index.value != 1)
-                ? ColorPalettes.instance.background
-                : Colors.black,
+            // backgroundColor: (logic.index.value != 1)
+            //     ? ColorPalettes.instance.background
+            //     : Colors.black,
             type: BottomNavigationBarType.fixed,
             currentIndex: logic.index.value,
             fixedColor: ColorPalettes.instance.primary,
@@ -75,11 +83,26 @@ class IndexPage extends StatelessWidget {
               logic.navigate(index);
             },
           ),
-          floatingActionButton: FloatingActionButton(
-            backgroundColor: ColorPalettes.instance.primary,
-            elevation: 8.0,
-            child: Image.asset("nav_push".png,
-                width: 72.w, height: 72.w, color: Colors.white),
+          //   floatingActionButton: FloatingActionButton(
+          //     backgroundColor: Colors.transparent,
+          //     //ColorPalettes.instance.primary,
+          //    // elevation: 1.0,
+          //     child: Image.asset("navi_pet".webp,
+          //         width: 210.w, height: 210.w),
+          //     onPressed: () {
+          //       AppRoutes.jumpPage(AppRoutes.publishPage, needLogin: true);
+          //     },
+          //   ),
+          // ));
+          floatingActionButton: RawMaterialButton(
+            // fillColor: Colors.transparent,
+            splashColor:Colors.transparent,
+            focusColor:Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor:  Colors.transparent,
+            elevation: 1.0,
+            child: Image.asset("navi_pet".webp,
+                width: 130.w, height: 130.w),
             onPressed: () {
               AppRoutes.jumpPage(AppRoutes.publishPage, needLogin: true);
             },

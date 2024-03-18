@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:joke_fun_flutter/theme/palette/ipalette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/ipalette.dart';
 
 class OrangePalette extends IPalette {
   @override
@@ -8,11 +8,11 @@ class OrangePalette extends IPalette {
   @override
   Color pure = const Color(0xFFFFFFFF);
   @override
-  Color primary = const Color(0xFFFF6633);
+  Color primary = const Color(0xFFFFD055);
   @override
-  Color primaryVariant = const Color(0xFFD6410F);
+  Color primaryVariant = const Color(0xFFFFD055);
   @override
-  Color secondary = const Color(0xFFF3906F);
+  Color secondary = const Color(0xFFFFD055);
   @override
   Color background = const Color(0xFFFAFAFA);
   @override

@@ -1,6 +1,6 @@
-import 'package:joke_fun_flutter/generated/json/base/json_convert_content.dart';
-import 'package:joke_fun_flutter/models/login_entity.dart';
-import 'package:joke_fun_flutter/models/user_info_entity.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_convert_content.dart';
+import 'package:druid_pamigo_flutter/models/login_entity.dart';
+import 'package:druid_pamigo_flutter/models/user_info_entity.dart';
 
 
 UserInfoEntity $UserInfoEntityFromJson(Map<String, dynamic> json) {

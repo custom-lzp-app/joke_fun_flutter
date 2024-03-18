@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
-import 'package:joke_fun_flutter/common/cpn/player/custom_video_player_skin.dart';
+import 'package:druid_pamigo_flutter/common/cpn/player/custom_video_player_skin.dart';
 import 'package:video_player/video_player.dart';
 
 /// 视频播放组件

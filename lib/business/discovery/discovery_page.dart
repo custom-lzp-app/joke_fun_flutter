@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/business/common/sheet/joke_comment_sheet.dart';
-import 'package:joke_fun_flutter/business/discovery/cpn/cpn_discovery_video_player.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_image.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state_paging.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/util/media_util.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/common/sheet/joke_comment_sheet.dart';
+import 'package:druid_pamigo_flutter/business/discovery/cpn/cpn_discovery_video_player.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_image.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state_paging.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'discovery_logic.dart';
 

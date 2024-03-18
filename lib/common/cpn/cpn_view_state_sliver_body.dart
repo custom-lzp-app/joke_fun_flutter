@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_instance/src/get_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
-import 'package:joke_fun_flutter/common/cpn/no_over_scroll_behavior.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_paging_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/no_over_scroll_behavior.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_paging_logic.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import 'cpn_default_view_state.dart';

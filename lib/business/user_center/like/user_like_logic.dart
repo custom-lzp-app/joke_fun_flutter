@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/user_center/like/pic_text/user_like_pic_text_page.dart';
-import 'package:joke_fun_flutter/business/user_center/like/video/user_like_video_page.dart';
-import 'package:joke_fun_flutter/common/cpn/keep_alive_wrapper.dart';
+import 'package:druid_pamigo_flutter/business/user_center/like/pic_text/user_like_pic_text_page.dart';
+import 'package:druid_pamigo_flutter/business/user_center/like/video/user_like_video_page.dart';
+import 'package:druid_pamigo_flutter/common/cpn/keep_alive_wrapper.dart';
 
 class UserLikeLogic extends GetxController
     with GetTickerProviderStateMixin {

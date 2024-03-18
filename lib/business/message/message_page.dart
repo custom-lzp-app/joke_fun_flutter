@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_nested_page.dart';
-import 'package:joke_fun_flutter/common/cpn/no_over_scroll_behavior.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_nested_page.dart';
+import 'package:druid_pamigo_flutter/common/cpn/no_over_scroll_behavior.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
 
 import '../../theme/color_palettes.dart';
 

@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/event/attention_changed_event.dart';
-import 'package:joke_fun_flutter/business/common/event/login_event.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
-import 'package:joke_fun_flutter/models/user_info_entity.dart';
+import 'package:druid_pamigo_flutter/business/common/event/attention_changed_event.dart';
+import 'package:druid_pamigo_flutter/business/common/event/login_event.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/models/user_info_entity.dart';
 
 import '../../common/util/user_manager.dart';
 import '../../http/retrofit_client.dart';

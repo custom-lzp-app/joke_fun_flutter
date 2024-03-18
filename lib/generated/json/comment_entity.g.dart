@@ -1,5 +1,5 @@
-import 'package:joke_fun_flutter/generated/json/base/json_convert_content.dart';
-import 'package:joke_fun_flutter/models/comment_entity.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_convert_content.dart';
+import 'package:druid_pamigo_flutter/models/comment_entity.dart';
 
 CommentEntity $CommentEntityFromJson(Map<String, dynamic> json) {
 	final CommentEntity commentEntity = CommentEntity();

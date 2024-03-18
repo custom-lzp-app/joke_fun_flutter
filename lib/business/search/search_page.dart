@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/search/history/cpn_search_history.dart';
-import 'package:joke_fun_flutter/business/search/hot/cpn_search_hot_key.dart';
-import 'package:joke_fun_flutter/business/search/result/cpn_search_result.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/search/history/cpn_search_history.dart';
+import 'package:druid_pamigo_flutter/business/search/hot/cpn_search_hot_key.dart';
+import 'package:druid_pamigo_flutter/business/search/result/cpn_search_result.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'search_logic.dart';
 

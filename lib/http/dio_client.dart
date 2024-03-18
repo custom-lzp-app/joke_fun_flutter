@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
-import 'package:joke_fun_flutter/http/interceptor/token_expire_interceptor.dart';
+import 'package:druid_pamigo_flutter/http/interceptor/token_expire_interceptor.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import 'interceptor/params_interceptor.dart';

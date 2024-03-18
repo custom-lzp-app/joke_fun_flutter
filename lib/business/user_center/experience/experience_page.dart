@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/user_center/experience/cpn/list/experience_list_page.dart';
-import 'package:joke_fun_flutter/business/user_center/experience/cpn/overview/cpn_experience_overview.dart';
-import 'package:joke_fun_flutter/business/user_center/experience/experience_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_nested_page.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/user_center/experience/cpn/list/experience_list_page.dart';
+import 'package:druid_pamigo_flutter/business/user_center/experience/cpn/overview/cpn_experience_overview.dart';
+import 'package:druid_pamigo_flutter/business/user_center/experience/experience_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_nested_page.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 我的乐豆页面
 class ExperiencePage extends CpnNestedPage<ExperienceLogic> {

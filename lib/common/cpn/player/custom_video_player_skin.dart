@@ -6,7 +6,7 @@ import 'package:chewie/src/helpers/utils.dart';
 import 'package:chewie/src/notifiers/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/common/cpn/progress_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/progress_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:video_player/video_player.dart';
 

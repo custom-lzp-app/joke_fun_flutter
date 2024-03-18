@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state.dart';
-import 'package:joke_fun_flutter/common/util/keyboard_util.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state.dart';
+import 'package:druid_pamigo_flutter/common/util/keyboard_util.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'edit_signature_logic.dart';
 

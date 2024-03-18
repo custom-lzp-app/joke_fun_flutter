@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/business/user_center/fans/fans_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_image.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state_paging.dart';
-import 'package:joke_fun_flutter/models/fans_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/user_center/fans/fans_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_image.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state_paging.dart';
+import 'package:druid_pamigo_flutter/models/fans_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 粉丝、关注页面
 class FansPage extends CpnViewStatePaging<FansLogic> {

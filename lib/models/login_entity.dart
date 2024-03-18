@@ -1,5 +1,5 @@
-import 'package:joke_fun_flutter/generated/json/base/json_field.dart';
-import 'package:joke_fun_flutter/generated/json/login_entity.g.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_field.dart';
+import 'package:druid_pamigo_flutter/generated/json/login_entity.g.dart';
 import 'dart:convert';
 
 @JsonSerializable()

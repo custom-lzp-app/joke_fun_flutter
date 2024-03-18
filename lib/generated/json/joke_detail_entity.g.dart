@@ -1,8 +1,8 @@
-import 'package:joke_fun_flutter/generated/json/base/json_convert_content.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_convert_content.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
 import 'dart:math';
 
-import 'package:joke_fun_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
 
 
 JokeDetailEntity $JokeDetailEntityFromJson(Map<String, dynamic> json) {

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:joke_fun_flutter/common/util/user_manager.dart';
+import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
 
 class ParamsInterceptor extends Interceptor {
 

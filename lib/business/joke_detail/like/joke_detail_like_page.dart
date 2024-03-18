@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/business/joke_detail/like/joke_detail_like_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_image.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state_sliver_body.dart';
-import 'package:joke_fun_flutter/common/util/media_util.dart';
-import 'package:joke_fun_flutter/models/joke_like_user_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/joke_detail/like/joke_detail_like_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_image.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state_sliver_body.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/models/joke_like_user_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 段子详情页-喜欢
 class JokeDetailLikePage extends CpnViewStateSliverBody<JokeDetailLikeLogic> {

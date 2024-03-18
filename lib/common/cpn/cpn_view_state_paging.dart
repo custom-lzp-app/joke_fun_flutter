@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:joke_fun_flutter/common/cpn/no_over_scroll_behavior.dart';
+import 'package:druid_pamigo_flutter/common/cpn/no_over_scroll_behavior.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../view_state/view_state_paging_logic.dart';

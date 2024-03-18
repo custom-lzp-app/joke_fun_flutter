@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/logic/joke_comment_list_logic.dart';
-import 'package:joke_fun_flutter/business/joke_detail/like/joke_detail_like_logic.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_comment_list_logic.dart';
+import 'package:druid_pamigo_flutter/business/joke_detail/like/joke_detail_like_logic.dart';
 
 import 'joke_detail_logic.dart';
 

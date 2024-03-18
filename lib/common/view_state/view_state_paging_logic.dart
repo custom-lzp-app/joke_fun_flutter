@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../models/base_result.dart';

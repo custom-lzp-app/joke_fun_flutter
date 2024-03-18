@@ -1,4 +1,4 @@
-import 'package:joke_fun_flutter/generated/json/base/json_convert_content.dart';
+import 'package:druid_pamigo_flutter/generated/json/base/json_convert_content.dart';
 
 ///convert和FlutterJsonBeanFactory结合解析
 class BaseResult<T> {

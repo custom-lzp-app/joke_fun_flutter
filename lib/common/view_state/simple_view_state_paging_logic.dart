@@ -1,6 +1,6 @@
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_paging_logic.dart';
-import 'package:joke_fun_flutter/models/base_result.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_paging_logic.dart';
+import 'package:druid_pamigo_flutter/models/base_result.dart';
 
 abstract class SimpleViewStatePagingLogic<E> extends ViewStatePagingLogic {
   RxList<E> dataList = <E>[].obs;

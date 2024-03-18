@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/user_center/user_center_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_image.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_nested_page.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/util/media_util.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/user_center/user_center_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_image.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_nested_page.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/media_util.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 /// 用户中心页面

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/cpn/cpn_bottom_sheet_action_button.dart';
-import 'package:joke_fun_flutter/common/ext/get_ext.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/business/common/cpn/cpn_bottom_sheet_action_button.dart';
+import 'package:druid_pamigo_flutter/common/ext/get_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
 
 import '../../../theme/color_palettes.dart';
 

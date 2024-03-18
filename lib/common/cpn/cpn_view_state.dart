@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state.dart';
-import 'package:joke_fun_flutter/common/view_state/view_state_logic.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state.dart';
+import 'package:druid_pamigo_flutter/common/view_state/view_state_logic.dart';
 
 import '../../theme/color_palettes.dart';
 import 'cpn_default_view_state.dart';

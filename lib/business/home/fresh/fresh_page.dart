@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:joke_fun_flutter/business/common/cpn/cpn_joke_item.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state_paging.dart';
+import 'package:druid_pamigo_flutter/business/common/cpn/cpn_joke_item.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state_paging.dart';
 
 import 'fresh_logic.dart';
 

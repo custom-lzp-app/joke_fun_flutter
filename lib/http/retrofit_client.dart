@@ -1,4 +1,4 @@
-import 'package:joke_fun_flutter/http/api/api_service.dart';
+import 'package:druid_pamigo_flutter/http/api/api_service.dart';
 
 class RetrofitClient {
   RetrofitClient._();

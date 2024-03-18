@@ -3,14 +3,14 @@ import 'dart:async';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/event/app_lifecycle_state_event.dart';
-import 'package:joke_fun_flutter/business/common/event/home_tab_index_changed_event.dart';
-import 'package:joke_fun_flutter/business/common/event/index_navigation_index_changed_event.dart';
-import 'package:joke_fun_flutter/business/home/home_logic.dart';
-import 'package:joke_fun_flutter/business/index/index_logic.dart';
-import 'package:joke_fun_flutter/common/util/event_bus_manager.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/business/common/event/app_lifecycle_state_event.dart';
+import 'package:druid_pamigo_flutter/business/common/event/home_tab_index_changed_event.dart';
+import 'package:druid_pamigo_flutter/business/common/event/index_navigation_index_changed_event.dart';
+import 'package:druid_pamigo_flutter/business/home/home_logic.dart';
+import 'package:druid_pamigo_flutter/business/index/index_logic.dart';
+import 'package:druid_pamigo_flutter/common/util/event_bus_manager.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
 import 'package:video_player/video_player.dart';
 
 /// 段子列表视频播放控制辅助类

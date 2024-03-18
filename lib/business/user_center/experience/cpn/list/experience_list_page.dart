@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state_sliver_body.dart';
-import 'package:joke_fun_flutter/models/experience_item_entity.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state_sliver_body.dart';
+import 'package:druid_pamigo_flutter/models/experience_item_entity.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 import 'experience_list_logic.dart';
 

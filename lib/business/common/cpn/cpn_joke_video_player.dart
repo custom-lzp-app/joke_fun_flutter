@@ -5,10 +5,10 @@ import 'package:chewie/src/animated_play_pause.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
-import 'package:joke_fun_flutter/common/cpn/player/custom_video_player_skin.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
+import 'package:druid_pamigo_flutter/common/cpn/player/custom_video_player_skin.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 /// 段子视频播放器组件

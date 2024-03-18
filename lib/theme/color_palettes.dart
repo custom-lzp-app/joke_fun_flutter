@@ -1,15 +1,15 @@
 import 'dart:ui';
 
 import 'package:get/get.dart';
-import 'package:joke_fun_flutter/common/util/preference_utils.dart';
-import 'package:joke_fun_flutter/theme/palette/dark/dark_palette.dart';
-import 'package:joke_fun_flutter/theme/palette/ipalette.dart';
-import 'package:joke_fun_flutter/theme/palette/light/blue_palette.dart';
-import 'package:joke_fun_flutter/theme/palette/light/default_palette.dart';
-import 'package:joke_fun_flutter/theme/palette/light/green_palette.dart';
-import 'package:joke_fun_flutter/theme/palette/light/orange_palette.dart';
-import 'package:joke_fun_flutter/theme/palette/light/purple_palette.dart';
-import 'package:joke_fun_flutter/theme/palette/light/yellow_palette.dart';
+import 'package:druid_pamigo_flutter/common/util/preference_utils.dart';
+import 'package:druid_pamigo_flutter/theme/palette/dark/dark_palette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/ipalette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/light/blue_palette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/light/default_palette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/light/green_palette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/light/orange_palette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/light/purple_palette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/light/yellow_palette.dart';
 
 class ColorPalettes {
   ColorPalettes._();

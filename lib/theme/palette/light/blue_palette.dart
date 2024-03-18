@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:joke_fun_flutter/theme/palette/ipalette.dart';
+import 'package:druid_pamigo_flutter/theme/palette/ipalette.dart';
 
 class BluePalette extends IPalette {
   @override

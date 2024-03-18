@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:joke_fun_flutter/common/util/toast_util.dart';
+import 'package:druid_pamigo_flutter/common/util/toast_util.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 ///权限检测工具

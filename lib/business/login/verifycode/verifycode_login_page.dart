@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joke_fun_flutter/business/login/verifycode/verifycode_login_logic.dart';
-import 'package:joke_fun_flutter/common/cpn/app_bar.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_verify_code_input.dart';
-import 'package:joke_fun_flutter/common/cpn/cpn_view_state.dart';
-import 'package:joke_fun_flutter/common/ext/asset_ext.dart';
-import 'package:joke_fun_flutter/common/util/keyboard_util.dart';
-import 'package:joke_fun_flutter/theme/color_palettes.dart';
+import 'package:druid_pamigo_flutter/business/login/verifycode/verifycode_login_logic.dart';
+import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_verify_code_input.dart';
+import 'package:druid_pamigo_flutter/common/cpn/cpn_view_state.dart';
+import 'package:druid_pamigo_flutter/common/ext/asset_ext.dart';
+import 'package:druid_pamigo_flutter/common/util/keyboard_util.dart';
+import 'package:druid_pamigo_flutter/theme/color_palettes.dart';
 
 /// 验证吗登录页面
 class VerifyCodeLoginPage extends CpnViewState<VerifyCodeLoginLogic> {

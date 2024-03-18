@@ -1,9 +1,9 @@
-import 'package:joke_fun_flutter/business/common/logic/joke_list_logic.dart';
-import 'package:joke_fun_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
-import 'package:joke_fun_flutter/http/retrofit_client.dart';
-import 'package:joke_fun_flutter/models/base_result.dart';
-import 'package:joke_fun_flutter/models/joke_detail_entity.dart';
-import 'package:joke_fun_flutter/router/routers.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_list_logic.dart';
+import 'package:druid_pamigo_flutter/business/common/logic/joke_list_video_play_helper_mixin.dart';
+import 'package:druid_pamigo_flutter/http/retrofit_client.dart';
+import 'package:druid_pamigo_flutter/models/base_result.dart';
+import 'package:druid_pamigo_flutter/models/joke_detail_entity.dart';
+import 'package:druid_pamigo_flutter/router/routers.dart';
 
 class AttentionListLogic extends JokeListLogic
     with JokeListVideoPlayHelperMixin {
