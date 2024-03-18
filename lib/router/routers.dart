@@ -1,3 +1,4 @@
+import 'package:druid_pamigo_flutter/business/login/login_page.dart';
 import 'package:get/get.dart';
 import 'package:druid_pamigo_flutter/business/index/index_binding.dart';
 import 'package:druid_pamigo_flutter/business/index/index_page.dart';
@@ -31,6 +32,8 @@ import 'package:druid_pamigo_flutter/business/user_center/user_center_binding.da
 import 'package:druid_pamigo_flutter/business/user_center/user_center_page.dart';
 import 'package:druid_pamigo_flutter/common/util/user_manager.dart';
 
+import '../business/login/login_binding.dart';
+
 class AppRoutes {
   static RxString curPage = indexPage.obs;
   static final prePage = Rxn<String>();
@@ -38,6 +41,7 @@ class AppRoutes {
   static const indexPage = "/";
   static const publishPage = "/publish_page";
   static const searchPage = "/search_page";
+  static const loginPage = "/login_page";
   static const verifyCodeLoginPage = "/verify_code_login_page";
   static const userCenterPage = "/user_center_page";
   static const userEditCenterPage = "/edit_center_page";
@@ -76,6 +80,11 @@ class AppRoutes {
         name: verifyCodeLoginPage,
         page: () => const VerifyCodeLoginPage(),
         binding: VerifyCodeLoginBinding()),
+    //登录页面
+    GetPage(
+        name: loginPage,
+        page: () => const LoginPage(),
+        binding: LoginBinding()),
 
     /// 用户中心页面--实用动态路由实现多实例
     // GetPage(
@@ -142,7 +151,7 @@ class AppRoutes {
       bool needLogin = false,
       String? tag}) {
     if (needLogin && !UserManager.instance.isLogin()) {
-      return Get.toNamed(verifyCodeLoginPage);
+      return Get.toNamed(loginPage);
     } else {
       tag = tag ?? DateTime.now().millisecondsSinceEpoch.toString();
       if (page == userCenterPage) {

@@ -54,7 +54,7 @@ class FollowPage extends CpnNestedPage {
         GestureDetector(
           behavior: HitTestBehavior.opaque,
           onTap: () {
-            AppRoutes.jumpPage(AppRoutes.verifyCodeLoginPage);
+            AppRoutes.jumpPage(AppRoutes.loginPage);
           },
           child: Container(
               width: 320.w,

@@ -31,7 +31,7 @@ abstract class ViewStateLogic extends GetxController {
     VoidCallback? failCallback,
   }) {
     if (needLogin && !UserManager.instance.isLogin()) {
-      AppRoutes.jumpPage(AppRoutes.verifyCodeLoginPage);
+      AppRoutes.jumpPage(AppRoutes.loginPage);
       return;
     }
     if (bindViewState) {

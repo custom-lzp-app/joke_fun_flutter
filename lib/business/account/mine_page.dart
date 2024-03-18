@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:druid_pamigo_flutter/common/cpn/app_bar.dart';
 import 'package:druid_pamigo_flutter/common/cpn/cpn_image.dart';
@@ -18,13 +19,13 @@ class MinePage extends CpnViewState<MyLogic> {
   const MinePage({Key? key}) : super(key: key, bindViewState: false);
 
   @override
-  AppBar? buildAppBar() => commonAppBar();
+  AppBar? buildAppBar() => commonAppBar(backgroundColor: ColorPalettes.instance.primary);
 
   @override
   Widget buildBody(context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 32.w),
+        padding: EdgeInsets.symmetric(horizontal: 0.w),
         child: Column(
           children: [
             _userBasicInfo()
@@ -41,7 +42,9 @@ class MinePage extends CpnViewState<MyLogic> {
         AppRoutes.jumpPage(AppRoutes.userCenterPage, needLogin: true);
       },
       child: Container(
-          padding: EdgeInsets.only(top: 64.w, bottom: 48.w),
+          // padding: EdgeInsets.only(top: 64.w, bottom: 48.w),
+          padding: EdgeInsets.only(left:  32.w,right: 32.w,top: 60.w, bottom: 48.w),
+          color: ColorPalettes.instance.primary,
           child: Row(children: [
             cpnCircleImage(
                 url: decodeMediaUrl(UserManager.instance.avatar.value),
@@ -60,15 +63,15 @@ class MinePage extends CpnViewState<MyLogic> {
                           : "登录/注册",
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          fontSize: 36.w,
+                          fontSize: 34.w,
                           color: ColorPalettes.instance.firstText),
                     ),
-                    SizedBox(height: 12.w),
+                    SizedBox(height: 6.w),
                     Text(
                       UserManager.instance.signature.value,
                       style: TextStyle(
                           fontWeight: FontWeight.w400,
-                          fontSize: 30.w,
+                          fontSize: 28.w,
                           color: ColorPalettes.instance.secondText),
                     )
                   ],

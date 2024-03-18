@@ -10,7 +10,7 @@ class TokenExpireInterceptor extends Interceptor {
       /// 登录过期
       LogE("TokenExpireInterceptor 登录过期");
       showToast("当前登录信息已过期，请重新登录");
-      AppRoutes.jumpPage(AppRoutes.verifyCodeLoginPage);
+      AppRoutes.jumpPage(AppRoutes.loginPage);
     }
     super.onResponse(response, handler);
   }

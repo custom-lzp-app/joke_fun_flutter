@@ -72,7 +72,7 @@ class JokeCommentListLogic extends SimpleViewStatePagingLogic {
     Get.hideBottomSheet();
     hideKeyboard();
     if(!UserManager.instance.isLogin()) {
-      Get.toNamed(AppRoutes.verifyCodeLoginPage);
+      Get.toNamed(AppRoutes.loginPage);
       return;
     }
     if (isInputValid.value) {
@@ -98,7 +98,7 @@ class JokeCommentListLogic extends SimpleViewStatePagingLogic {
     Get.hideBottomSheet();
     hideKeyboard();
     if(!UserManager.instance.isLogin()) {
-      Get.toNamed(AppRoutes.verifyCodeLoginPage);
+      Get.toNamed(AppRoutes.loginPage);
       return;
     }
     if (isInputValid.value) {
