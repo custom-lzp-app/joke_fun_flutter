@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,15 +25,21 @@ class MinePage extends CpnViewState<MyLogic> {
 
   @override
   Widget buildBody(context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 0.w),
-        child: Column(
-          children: [
-            _userBasicInfo()
-          ],
-        ),
-      ),
+    return Container(
+        color: const Color(0xffF8F7F6), // 设置背景颜色
+        width: double.infinity,
+        height: double.infinity,
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 0.w),
+            child: Column(
+              children: [
+                _userBasicInfo(),
+                _userMenuInfo()
+              ],
+            ),
+          ),
+        )
     );
   }
 
@@ -84,6 +92,99 @@ class MinePage extends CpnViewState<MyLogic> {
     );
   }
 
+  Widget _userMenuInfo() {
+    return Card(
+        elevation: 2.w,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(18.w),
+        ),
+        margin: EdgeInsets.symmetric(horizontal: 32.w, vertical: 40.w),
+        child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 0.w, vertical: 0.w),
+            child: Container(
+                width: double.infinity,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(18.w)),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _itemMenu(
+                          icon: "ic_my_device",
+                          text: "Device",
+                          paddingHorizontal: 25.w,
+                          paddingVertical: 30.w,
+                          onTap: () {}),
+                      _itemGap(),
+                      _itemMenu(
+                          icon: "ic_my_notify",
+                          text: "Notification setting",
+                          paddingHorizontal: 25.w,
+                          paddingVertical: 30.w,
+                          onTap: () {}),
+                      _itemGap(),
+                      _itemMenu(icon: "ic_my_secury",
+                          text: "Account security",
+                          paddingHorizontal: 25.w,
+                          paddingVertical: 30.w,
+                          onTap: () {}),
+                      _itemGap(),
+                      _itemMenu(
+                          icon: "ic_my_timezone",
+                          text: "Time zone （UTC+8）",
+                          paddingHorizontal: 25.w,
+                          paddingVertical: 30.w,
+                          onTap: () {}),
+                      _itemGap(),
+                      _itemMenu(icon: "ic_my_about",
+                          text: "About",
+                          paddingHorizontal: 25.w,
+                          paddingVertical: 30.w,
+                          onTap: () {
+                            print("object");
+                          }),
+                    ]))
+        )
+    );
+  }
 
+  Widget _itemMenu({ required String icon, required String text,required double paddingHorizontal, required double paddingVertical,required VoidCallback onTap}){
+    return  Material(
+      color: Colors.transparent,
+      child:
+      InkWell(
+        onTap: onTap,
+        child:
+        GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: onTap,
+            child: Padding(padding: EdgeInsets.only(
+                left: paddingHorizontal,
+                right: paddingHorizontal,
+                top: paddingVertical,
+                bottom: paddingVertical),
+                child: Row(
+                  children: [
+                    Image.asset(icon.webp,
+                        width: 50.w,
+                        height: 50.w,
+                        fit: BoxFit.contain),
+                    SizedBox(width: 10.w),
+                    Text(text,
+                        style: TextStyle(
+                            color: const Color(0xFF0F1010),
+                            fontSize: 34.sp))
+                  ],
+                ))
+        ),
+      ),
+    );
+  }
+
+  Widget _itemGap(){
+    return SizedBox(width: double.infinity,
+        height: 1.w,
+        child: Container(color: const Color(0xffE5E6EB)));
+  }
 
 }

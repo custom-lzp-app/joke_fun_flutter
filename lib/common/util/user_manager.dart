@@ -27,10 +27,10 @@ class UserManager {
         var localLoginEntity = LoginEntity.fromJson(jsonMap);
         _loginEntity.value = localLoginEntity;
         nickname.value = localLoginEntity.userInfo?.nickname ?? "";
-        signature.value = localLoginEntity.userInfo?.signature ?? "期待您的创作～";
-        sex.value = localLoginEntity.userInfo?.sex ?? "";
-        birthday.value = localLoginEntity.userInfo?.birthday ?? "";
-        avatar.value = localLoginEntity.userInfo?.avatar ?? "";
+        // signature.value = localLoginEntity.userInfo?.signature ?? "期待您的创作～";
+        // sex.value = localLoginEntity.userInfo?.sex ?? "";
+        // birthday.value = localLoginEntity.userInfo?.birthday ?? "";
+        // avatar.value = localLoginEntity.userInfo?.avatar ?? "";
       }
     }
     return _loginEntity;
@@ -46,10 +46,10 @@ class UserManager {
   void updateLoginEntity(LoginEntity loginEntity) {
     _loginEntity.value = loginEntity;
     nickname.value = loginEntity.userInfo?.nickname ?? "";
-    signature.value = loginEntity.userInfo?.signature ?? "期待您的创作～";
-    sex.value = loginEntity.userInfo?.sex ?? "";
-    birthday.value = loginEntity.userInfo?.birthday ?? "";
-    avatar.value = loginEntity.userInfo?.avatar ?? "";
+    // signature.value = loginEntity.userInfo?.signature ?? "期待您的创作～";
+    // sex.value = loginEntity.userInfo?.sex ?? "";
+    // birthday.value = loginEntity.userInfo?.birthday ?? "";
+    // avatar.value = loginEntity.userInfo?.avatar ?? "";
     String json = loginEntity.toString();
     PreferenceUtils.instance.putString(keyLoginEntity, json);
   }
@@ -67,7 +67,7 @@ class UserManager {
   void updateSignature(String value) {
     signature.value = value;
     if (_loginEntity.value != null) {
-      _loginEntity.value?.userInfo?.signature = value;
+      // _loginEntity.value?.userInfo?.signature = value;
       updateLoginEntity(_loginEntity.value!);
     }
   }
@@ -75,7 +75,7 @@ class UserManager {
   void updateSex(String value) {
     sex.value = value;
     if (_loginEntity.value != null) {
-      _loginEntity.value?.userInfo?.sex = value;
+      // _loginEntity.value?.userInfo?.sex = value;
       updateLoginEntity(_loginEntity.value!);
     }
   }
@@ -83,7 +83,7 @@ class UserManager {
   void updateBirthday(String value) {
     birthday.value = value;
     if (_loginEntity.value != null) {
-      _loginEntity.value?.userInfo?.birthday = value;
+      // _loginEntity.value?.userInfo?.birthday = value;
       updateLoginEntity(_loginEntity.value!);
     }
   }
@@ -91,10 +91,11 @@ class UserManager {
   void updateAvatar(String value) {
     avatar.value = value;
     if (_loginEntity.value != null) {
-      _loginEntity.value?.userInfo?.avatar = value;
+      // _loginEntity.value?.userInfo?.avatar = value;
       updateLoginEntity(_loginEntity.value!);
     }
   }
+
 
   bool isSelf(int? userId) => _loginEntity.value?.userInfo?.userId == userId;
 

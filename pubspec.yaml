@@ -69,6 +69,9 @@ dependencies:
   chewie: ^1.7.0
   video_player: ^2.7.1
   photo_manager: ^3.0.0
+  # sha 456
+  crypto: ^3.0.0
+
 
 dev_dependencies:
   flutter_test:

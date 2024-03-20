@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../common/cpn/app_bar.dart';
-import '../../common/cpn/cpn_verify_code_input.dart';
 import '../../common/cpn/cpn_view_state.dart';
 import '../../common/util/keyboard_util.dart';
 import '../../theme/color_palettes.dart';
@@ -18,16 +17,15 @@ class LoginPage extends CpnViewState<LoginLogic> {
   @override
   Widget buildBody(context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 64.w),
-      child: AnimatedSwitcher(
-          duration: const Duration(milliseconds: 500),
-          child: !logic.getVerifyCodeSuccess.value
-              ? _inputPhoneNum()
-              : _inputVerifyCode()),
+        padding: EdgeInsets.symmetric(horizontal: 64.w),
+        child: Container(
+            color: Colors.white,
+            child: _inputLogin()
+        )
     );
   }
 
-  Widget _inputPhoneNum() {
+  Widget _inputLogin() {
     return Column(
       key: const ValueKey("_inputPhoneNum"),
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,8 +38,10 @@ class LoginPage extends CpnViewState<LoginLogic> {
                 height: 160.w),
             SizedBox(width: 20.w),
             Text("Pamigo",
-              style: TextStyle(
-                  color: const Color(0xFF0F1010), fontSize: 48.w,fontWeight:FontWeight.w600 ))
+                style: TextStyle(
+                    color: const Color(0xFF0F1010),
+                    fontSize: 48.w,
+                    fontWeight: FontWeight.w600))
           ],
         ),
         SizedBox(height: 80.w),
@@ -120,12 +120,12 @@ class LoginPage extends CpnViewState<LoginLogic> {
       alignment: Alignment.centerLeft,
       padding: EdgeInsets.only(left: 30.w, right: 24.w),
       decoration: BoxDecoration(
-        color:Colors.transparent,
-        borderRadius: BorderRadius.circular(15.w),
-        border: Border.all(
-          color: const Color(0x1C000000),
-          width: 2.w,
-        )),
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(15.w),
+          border: Border.all(
+            color: const Color(0x1C000000),
+            width: 2.w,
+          )),
       child: Row(
         children: [
           Image.asset("ic_login_pwd".webp, width: 45.w, height: 45.w),
@@ -198,83 +198,10 @@ class LoginPage extends CpnViewState<LoginLogic> {
                   fontWeight: FontWeight.w600)),
         ),
         onTap: () {
-          if (logic.isEmailValid.value&&logic.isPasswordValid.value) {
+          // if (logic.isEmailValid.value && logic.isPasswordValid.value) {
             hideKeyboard();
             logic.loginByPassword();
-          }
-        },
-      ),
-    );
-  }
-
-  Widget _inputVerifyCode() {
-    return Column(
-      key: const ValueKey("_inputVerifyCode"),
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(height: 64.w),
-        Text("请输入验证码1",
-            style: TextStyle(
-                color: ColorPalettes.instance.firstText,
-                fontSize: 48.w,
-                fontWeight: FontWeight.w600)),
-        SizedBox(height: 24.w),
-        Text("请关注微信公众号【Cretin的开发之路】，在输入框输入【#13】获取验证码。",
-            style: TextStyle(
-                color: ColorPalettes.instance.thirdText, fontSize: 24.w)),
-        SizedBox(height: 80.w),
-        CpnVerifyCodeInput(
-          height: 88.w,
-          onSubmit: (value) {
-            logic.inputVerifyCode(value);
-          },
-        ),
-        SizedBox(height: 48.w),
-        _loginButton(),
-        SizedBox(height: 32.w),
-      ],
-    );
-  }
-
-  Widget refreshVerifyCodeButton() {
-    return Container(
-        height: 40.w,
-        width: 140.w,
-        alignment: Alignment.center,
-        margin: EdgeInsets.symmetric(horizontal: 32.w),
-        decoration: BoxDecoration(
-            color: ColorPalettes.instance.inputBackground,
-            borderRadius: BorderRadius.circular(20.w)),
-        child: Text("重新获取1",
-            style: TextStyle(
-                color: ColorPalettes.instance.secondText, fontSize: 24.w)));
-  }
-
-  Widget _loginButton() {
-    return Container(
-      width: double.infinity,
-      height: 112.w,
-      alignment: Alignment.center,
-      padding: EdgeInsets.only(left: 48.w, right: 24.w),
-      decoration: BoxDecoration(
-          color: logic.verifyCodeValid.value
-              ? ColorPalettes.instance.primary
-              : ColorPalettes.instance.secondary,
-          borderRadius: BorderRadius.circular(56.w)),
-      child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        child: Container(
-          width: double.infinity,
-          height: double.infinity,
-          alignment: Alignment.center,
-          child: Text("登录1",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 32.w,
-                  fontWeight: FontWeight.w600)),
-        ),
-        onTap: () {
-          logic.loginByPassword();
+          // }
         },
       ),
     );

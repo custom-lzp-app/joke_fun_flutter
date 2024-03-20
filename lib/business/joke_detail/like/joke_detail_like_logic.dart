@@ -26,7 +26,7 @@ class JokeDetailLikeLogic extends SimpleViewStatePagingLogic {
             JokeLikeUserEntity entity = JokeLikeUserEntity();
             entity.nickname = user.nickname;
             entity.userId = user.userId;
-            entity.avatar = user.avatar;
+            // entity.avatar = user.avatar;
             dataList.insert(0, entity);
           } else {
             var pendingRemoveEntity = dataList

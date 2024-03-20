@@ -13,8 +13,10 @@ class _ApiService implements ApiService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'http://tools.cretinzp.com/jokes/';
+    baseUrl ??= 'https://pamigo-v1.company.druidtech.net/';
   }
+
+  final String TOKEN_KEY= "x-druid-authentication";
 
   final Dio _dio;
 
@@ -1114,5 +1116,51 @@ class _ApiService implements ApiService {
       }
     }
     return requestOptions;
+  }
+
+  @override
+  Future<BaseResult<LoginEntity>> loginByPassword(
+      email,
+      password,
+      ) async {
+    password=getPassword(email, password);
+    const _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = {
+      'username': email,
+      'password': password,
+    };
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<BaseResult<LoginEntity>>(Options(
+          method: 'POST',
+          headers: _headers,
+          extra: _extra,
+          contentType: 'application/json', //'application/x-www-form-urlencoded',
+        )
+            .compose(
+          _dio.options,
+          '/api/v1/user/login',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+    String? token;
+    if (!_result.headers.isEmpty) {
+      if (_result.headers.map.containsKey(TOKEN_KEY)) {
+        List<String>? values = _result.headers.map[TOKEN_KEY];
+        if (values!.isNotEmpty) {
+          token = values?[0];
+        }
+      }
+    }
+    final value = BaseResult<LoginEntity>.fromJsonBean(_result.data!);
+    if(value.data!=null) {
+      if (value.isSuccess()) {
+        value.data?.token = token;
+        value.data?.password = password;
+      }
+    }
+    return value;
   }
 }

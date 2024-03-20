@@ -11,7 +11,7 @@ JokeLikeUserEntity $JokeLikeUserEntityFromJson(Map<String, dynamic> json) {
 	if (nickname != null) {
 		jokeLikeUserEntity.nickname = nickname;
 	}
-	final int? userId = jsonConvert.convert<int>(json['user_id']);
+	final String? userId = jsonConvert.convert<String>(json['user_id']);
 	if (userId != null) {
 		jokeLikeUserEntity.userId = userId;
 	}

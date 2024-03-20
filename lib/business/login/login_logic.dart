@@ -56,7 +56,7 @@ class LoginLogic extends ViewStateLogic {
   /// 账号/密码 登录
   void loginByPassword() {
     sendRequest(
-        RetrofitClient.instance.apiService.loginByCode(verifyCode.value, email.value),
+        RetrofitClient.instance.apiService.loginByPassword(email.value, password.value),
         showLoadingDialog: true,
         successCallback: (value) {
           LoginEntity loginEntity = value!;

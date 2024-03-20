@@ -21,6 +21,18 @@ class BaseResult<T> {
     msg = json['msg'];
   }
 
+  BaseResult.fromJsonBean(Map<String, dynamic> json) {
+    if(json.isNotEmpty) {
+      try {
+        data = JsonConvert.fromJsonAsT<T>(json);
+        code = 200;
+        msg = "";
+      } catch (e) {
+        /// fix List<String>
+      }
+    }
+  }
+
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     if (this.data != null) {

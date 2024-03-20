@@ -15,11 +15,12 @@ import 'package:druid_pamigo_flutter/models/user_info_entity.dart';
 import 'package:druid_pamigo_flutter/models/video_entity.dart';
 import 'package:retrofit/http.dart';
 
+import '../../common/util/string_util.dart';
 import '../dio_client.dart';
 
 part 'api_service.g.dart';
 
-@RestApi(baseUrl: "http://tools.cretinzp.com/jokes/")
+@RestApi(baseUrl: "https://pamigo-v1.company.druidtech.net/")
 abstract class ApiService {
   factory ApiService({Dio? dio, String? baseUrl}) {
     return _ApiService(DioClient().dio, baseUrl: baseUrl);
@@ -209,6 +210,12 @@ abstract class ApiService {
   @FormUrlEncoded()
   Future<BaseResult<LoginEntity>> loginByCode(
       @Field() String code, @Field() String phone);
+
+  /// 根据账号密码登录
+  @POST('/api/v1/user/login')
+  @FormUrlEncoded()
+  Future<BaseResult<LoginEntity>> loginByPassword(
+      @Field() String email, @Field() String password);
 
   /// 获取用户信息
   @POST('/user/info')

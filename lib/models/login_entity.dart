@@ -4,13 +4,14 @@ import 'dart:convert';
 
 @JsonSerializable()
 class LoginEntity {
-	String? token;
-	String? type;
+	String?token;
+	String?password;
 	User? userInfo;
 
 	LoginEntity();
 
-	factory LoginEntity.fromJson(Map<String, dynamic> json) => $LoginEntityFromJson(json);
+	factory LoginEntity.fromJson(Map<String, dynamic> json) =>
+			$LoginEntityFromJson(json);
 
 	Map<String, dynamic> toJson() => $LoginEntityToJson(this);
 
@@ -22,14 +23,9 @@ class LoginEntity {
 
 @JsonSerializable()
 class User {
-	String? avatar;
-	String? birthday;
-	String? inviteCode;
-	String? invitedCode;
 	String? nickname;
-	String? sex;
-	String? signature;
-	int? userId;
+	String? username;
+	String? userId;
 	String? userPhone;
 
 	User();

@@ -7,7 +7,7 @@ class JokeLikeUserEntity {
 	String? avatar;
 	String? nickname;
 	@JSONField(name: "user_id")
-	int? userId;
+	String? userId;
 
 	JokeLikeUserEntity();
 
